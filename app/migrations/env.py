@@ -4,8 +4,8 @@ from alembic import context
 
 # Импорт моделей и базы
 from app.backend.db import Base
-from app.models.user import User
-from app.models.task import Task
+from app.models import user, task
+models = [task, user]
 
 # Конфигурация Alembic
 config = context.config
